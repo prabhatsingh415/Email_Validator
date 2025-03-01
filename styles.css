@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+body {
+  font-family: "Roboto Flex", sans-serif;
+  height: 100%;
+  background: linear-gradient(135deg, #0e1a5e, #312cd2, #31328b, #273194);
+  background-attachment: fixed;
+  color: black;
+  display: flex;
+  flex-direction: column; /* Yeh fix karega button aur input neeche aane ka issue */
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrapper {
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+}
+
+#main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#input_contaier {
+  display: flex;
+  padding: 10px;
+  margin: 30px;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+#input {
+  width: clamp(200px, 50vw, 350px); /* Minimum 200px, scales up to 600px */
+  height: clamp(30px, 5vh, 50px); /* Adjust height dynamically */
+  font-size: clamp(1rem, 2vw, 1.2rem); /* Responsive font size */
+  padding: clamp(8px, 1vw, 12px); /* Padding adjusts based on screen */
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-left: 10px;
+  background-color: white;
+}
+#validate {
+  font-size: clamp(1rem, 1vw, 1.5rem); /* Responsive font size */
+  padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 1vw, 2rem); /* Responsive padding */
+  width: clamp(150px, 10vw, 250px); /* Responsive width */
+  height: clamp(40px, 5vh, 60px); /* Responsive height */
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  background: rgb(29, 35, 42);
+  color: rgb(25, 197, 176);
+  border: rgb(25, 197, 176) solid 2px;
+}
+#validate:hover {
+  background: rgb(25, 197, 176);
+  color: rgb(29, 35, 42);
+}
+.cursor {
+  font-size: clamp(1.5rem, 5vw, 4rem);
+  font-weight: bold;
+  animation: blink 0.8s infinite;
+}
+
+#typed_Word {
+  font-size: clamp(1.5rem, 5vw, 4rem);
+  font-weight: bold;
+  margin: 20px;
+  width: 80vw; /* Title takes 80% of the viewport width */
+  text-align: center;
+}
+#resultTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#resultTable th,
+#resultTable td {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: left;
+}
+
+#resultTable th {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+}
+
+#resultTable tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+#resultTable tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#result {
+  text-align: center;
+  margin-top: 20px;
+}
