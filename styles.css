@@ -44,6 +44,9 @@ header {
 
 #input_contaier {
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   padding: 10px;
   margin: 30px;
   font-weight: 900;
@@ -56,7 +59,7 @@ header {
   padding: clamp(8px, 1vw, 12px);
   border-radius: 10px;
   border: 2px solid black;
-  margin-left: 10px;
+  margin: 15px;
   background-color: white;
 }
 #validate {
