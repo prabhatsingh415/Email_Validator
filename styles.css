@@ -122,18 +122,16 @@ header {
   margin-top: 20px;
 }
 footer {
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    min-height: 12vh;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  min-height: 12vh;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #footer_container {
