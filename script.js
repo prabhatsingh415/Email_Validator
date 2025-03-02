@@ -1,6 +1,6 @@
 document.getElementById("validate").addEventListener("click", function () {
-  const emailInput = document.getElementById("input").value.trim(); // Trim input
-  const apiKey = "ema_live_UxWKero2YSThdPWjbaFvUk6dyQQZmJPdhvxfL12w"; // API Key
+  const emailInput = document.getElementById("input").value.trim();
+  const apiKey = "ema_live_UxWKero2YSThdPWjbaFvUk6dyQQZmJPdhvxfL12w";
   const apiUrl = `https://api.emailvalidation.io/v1/info?apikey=${apiKey}&email=${emailInput}`;
   const resultBlock = document.getElementById("result");
 
@@ -19,7 +19,7 @@ document.getElementById("validate").addEventListener("click", function () {
     })
     .then((data) => {
       console.log("API Response Received", data);
-      resultBlock.innerHTML = ""; // Clear previous results
+      resultBlock.innerHTML = "";
       addResult(data);
     })
     .catch((error) => {
@@ -35,9 +35,8 @@ function showLoading() {
 
 function addResult(data) {
   const resultBlock = document.getElementById("result");
-  resultBlock.innerHTML = ""; // Clear result block
+  resultBlock.innerHTML = "";
 
-  // Create table if it doesn't exist
   let table = document.createElement("table");
   table.setAttribute("id", "resultTable");
   table.style.color = "white";
