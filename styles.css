@@ -59,7 +59,7 @@ header {
   padding: clamp(8px, 1vw, 12px);
   border-radius: 10px;
   border: 2px solid black;
-  margin: 15px;
+  margin-left: 10px;
   background-color: white;
 }
 #validate {
@@ -109,7 +109,7 @@ header {
 
 #resultTable th,
 #resultTable td {
-  padding: 1px;
+  padding: 8px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   text-align: left;
 }
@@ -129,7 +129,21 @@ header {
 
 #result {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  #resultTable {
+    width: 90%; /* Allow table to shrink more on smaller screens */
+    font-size: 0.8rem; /* Reduce font size for small screens */
+  }
+
+  #resultTable th,
+  #resultTable td {
+    padding: 3px; /* Reduce padding */
+  }
+  #input {
+    margin-top: 10px;
+  }
 }
 
 footer {
