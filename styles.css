@@ -4,7 +4,6 @@ html,
 body {
   font-family: "Roboto Flex", sans-serif;
   min-height: 100vh;
-  overflow-y: auto;
   background: linear-gradient(135deg, #0e1a5e, #312cd2, #31328b, #273194);
   background-attachment: fixed;
   color: black;
