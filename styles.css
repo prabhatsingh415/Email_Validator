@@ -133,6 +133,11 @@ footer {
   align-items: center;
   justify-content: center;
 }
+.footer-text {
+  display: flex;
+  flex-direction: row;
+  gap: 25%;
+}
 
 #footer_container {
   display: flex;
